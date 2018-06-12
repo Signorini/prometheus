@@ -61,6 +61,9 @@ scrape_configs:
       - 'tasks.node-exporter'
       type: 'A'
       port: 9100
+
+
+  - job_name: redis_exporter
+    static_configs:
+    - targets: ['10.1.52.187:8195','10.1.54.223:8195','10.1.52.229:8195','10.1.55.124:8195','10.1.54.225:8195','10.1.63.118:8195','10.1.62.184:8195','10.1.61.152:8195','10.1.61.252:8195']
     
-#     static_configs:
-#          - targets: ['node-exporter:9100']
